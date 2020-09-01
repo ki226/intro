@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Typist from "react-typist";
+import "./App.scss";
+import "./Typist.scss";
+import IntroducePdf from "./Front-end 이승민.pdf";
+import introduceImg from "./introduceimg.png";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class Introduce extends React.Component {
+  render() {
+    return (
+      <div className="Introduce">
+        <Typist>
+          <span>
+            안 녕 하 세 요.
+            <br />
+            <Typist.Delay ms={1000} />
+            f r o n t - e n d 신 입 개 발 자 <br />
+            <Typist.Delay ms={1000} />이 승 민 입 니 다.
+          </span>
+        </Typist>
+        <img className="image" src={introduceImg} />
+      </div>
+    );
+  }
 }
 
-export default App;
+export default Introduce;
