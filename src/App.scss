@@ -1,13 +1,44 @@
 .Introduce {
-  text-align: center;
-  margin-top: 20px;
-  span {
-    padding-top: 100px;
-    font-weight: bold;
-    font-family: "Nanum Gothic", sans-serif;
-    font-size: 50px;
+  background-color: #fad390;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  // padding: 0 20px;
+
+  .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    width: 100%;
+
+    .selfie {
+      margin-top: 20px;
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      border: 5px solid gray;
+      transition: 0.5s;
+      cursor: pointer;
+
+      &:hover {
+        width: 380px;
+        height: 380px;
+        transition: 0.5s;
+      }
+    }
+
+    .typingtext {
+      font-weight: bold;
+      font-family: "Nanum Gothic", sans-serif;
+      font-size: 50px;
+      margin-top: 80px;
+    }
   }
-  img {
+
+  .resume {
     margin-top: 20px;
+    // border: 1px solid black;
   }
 }
