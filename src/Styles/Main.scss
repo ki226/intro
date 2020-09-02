@@ -1,9 +1,8 @@
 .Introduce {
-  // background-color: #fad390;
-  position: relative;
   display: flex;
+  flex-flow: column;
   justify-content: center;
-  // padding: 0 20px;
+  align-items: center;
 
   .head {
     display: flex;
@@ -38,8 +37,7 @@
     }
   }
 
-  .resume {
-    // margin: 20px 0;
-    // border: 1px solid black;
+  .resumeImg {
+    margin-top: 100px;
   }
 }

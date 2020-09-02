@@ -20,7 +20,9 @@ function Main() {
         </Typist>
         <img className="selfie" src={selfie}></img>
       </div>
-      <img className="resume" src={introduceImg} />
+      <div className="resumeImg">
+        <img src={introduceImg} />
+      </div>
     </div>
   );
 }
