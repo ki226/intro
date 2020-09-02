@@ -14,7 +14,7 @@ function Main() {
             안 녕 하 세 요.
             <br />
             <Typist.Delay ms={1000} />
-            F r o n t - e n d 신 입 개 발 자 <br />
+            F r o n t - e n d 개 발 자 <br />
             <Typist.Delay ms={1000} />이 승 민 입 니 다.
           </span>
         </Typist>
