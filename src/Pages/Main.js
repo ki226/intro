@@ -1,11 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import { withRouter } from "react-router-dom";
 import Typist from "react-typist";
-import "../Styles/Main.scss";
-import introduceImg from "../Images/introduceimg.png";
+import "../Pages/Main.scss";
 import selfie from "../Images/selfie.jpeg";
 
-function Main() {
+function Main({ history }) {
+  const goToProfile = () => {
+    history.push("/profile");
+  };
+  console.log(history);
   return (
     <div className="Introduce">
       <div className="head">
@@ -18,13 +21,15 @@ function Main() {
             <Typist.Delay ms={1000} />이 승 민 입 니 다.
           </span>
         </Typist>
-        <img className="selfie" src={selfie}></img>
-      </div>
-      <div className="resumeImg">
-        <img src={introduceImg} />
+        <img
+          className="selfie"
+          src={selfie}
+          alt="selfie"
+          onClick={goToProfile}
+        ></img>
       </div>
     </div>
   );
 }
 
-export default Main;
+export default withRouter(Main);
